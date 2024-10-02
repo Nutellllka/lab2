@@ -1,0 +1,41 @@
+body {
+    background-color: #f0f0f0;
+}
+
+.container {
+    position: relative; 
+    width: 170px;      
+    height: 150px;      
+    margin: 20px auto;  
+}
+
+.cube {
+    width: 70px;         
+    height: 70px;         
+    border-radius: 10px;  
+    position: absolute;   
+    transform: rotate(45deg); 
+    border: 2px solid black;  
+}
+
+.skyblue {
+    background-color: skyblue;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg); 
+}
+
+.yellow {
+    background-color: yellow;
+    top: 70%;
+    left: 0;
+    transform: translate(0, -50%) rotate(20deg); 
+}
+
+
+.magenta {
+    background-color: magenta;
+    top: 70%;
+    left: 100%;
+    transform: translate(-100%, -50%) rotate(70deg); 
+}

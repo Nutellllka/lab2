@@ -1,0 +1,44 @@
+body {
+    background-color: #f0f0f0; /* Светлый фон для контраста */
+}
+
+.container {
+    position: relative; /* Для позиционирования кубиков */
+    width: 170px;       /* Ширина контейнера */
+    height: 150px;      /* Высота контейнера */
+    margin: 20px auto;  /* Центрируем контейнер с кубиками под таблицей */
+}
+
+/* Общий стиль для кубиков */
+.cube {
+    width: 70px;          /* Ширина кубика */
+    height: 70px;         /* Высота кубика */
+    border-radius: 10px;  /* Скругленные углы */
+    position: absolute;   /* Для точного позиционирования */
+    transform: rotate(45deg); /* Поворот кубиков на 45 градусов */
+    border: 2px solid black;  /* Добавляем чёрный контур */
+}
+
+/* Стиль для небесно-голубого кубика (верхний) */
+.skyblue {
+    background-color: skyblue;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0) rotate(45deg); /* Центрируем по горизонтали и поворачиваем */
+}
+
+/* Стиль для жёлтого кубика (слева снизу) */
+.yellow {
+    background-color: yellow;
+    top: 70%;
+    left: 0;
+    transform: translate(0, -50%) rotate(20deg); /* Позиционируем жёлтый кубик */
+}
+
+/* Стиль для малинового кубика (справа снизу) */
+.magenta {
+    background-color: magenta;
+    top: 70%;
+    left: 100%;
+    transform: translate(-100%, -50%) rotate(70deg); /* Позиционируем малиновый кубик */
+}
